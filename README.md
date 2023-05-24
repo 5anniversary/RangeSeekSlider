@@ -1,5 +1,32 @@
 # RangeSeekSlider
 
+```mermaid
+graph TD;
+    CoreAdmin-->PulseLogger;
+    CoreLogger-->InHouseLogger;
+    CoreLogger-->PulseLogger;
+    CoreLogger-->FBAEMKit;
+    CoreLogger-->FBSDKCoreKit_Basics;
+    CoreLogger-->FBSDKCoreKit;
+    CoreLogger-->FBSDKLoginKit;
+    CoreLogger-->FBSDKShareKit;
+    CoreLoggerTests-->CoreLogger;
+    CoreThirdParty-->FBAEMKit;
+    CoreThirdParty-->FBSDKCoreKit_Basics;
+    CoreThirdParty-->FBSDKCoreKit;
+    CoreThirdParty-->FBSDKShareKit;
+    CoreUtil-->CoreThirdParty;
+    CoreUtil-->CoreResource;
+    InHouseLogger-->CoreDataKit;
+    InHouseLogger-->CoreNetwork;
+    CoreAuth-->FBAEMKit;
+    CoreAuth-->FBSDKCoreKit_Basics;
+    CoreAuth-->FBSDKCoreKit;
+    CoreAuth-->FBSDKLoginKit;
+    CoreAuth-->NaverThirdPartyLogin;
+```
+
+
 [![Join the chat at https://gitter.im/WorldDownTown/RangeSeekSlider](https://badges.gitter.im/WorldDownTown/RangeSeekSlider.svg)](https://gitter.im/WorldDownTown/RangeSeekSlider?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://doge.mit-license.org)
